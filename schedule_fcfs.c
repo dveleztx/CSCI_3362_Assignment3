@@ -1,11 +1,8 @@
 //
 // Created by  Harry Staley on 3/20/19.
 //
-<<<<<<< HEAD
 #include <stdlib.h>
 #include <zconf.h>
-=======
-
 #include <stdio.h>
 #include <unistd.h>
 #include "task.h"
@@ -39,7 +36,6 @@ void add(char *name, int priority, int burst) {
 
 	schedule();
 
->>>>>>> 205bd558a477f73809095d7a14131287d43a127f
 }
 
 // invoke the scheduler
