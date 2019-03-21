@@ -19,8 +19,6 @@ struct node *myNode = NULL;
 // add a task to the list
 void add(char *name, int priority, int burst) {
 
-	schedule();
-
 	Task myTask = { name, TID, priority, burst };
 	sendTask = &myTask;
 
