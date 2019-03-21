@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="CSCI_3362_Assignment3"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/harrystaley/Documents/Git/College_Homework/CSCI3362_Operating_Systems/CSCI_3362_Assignment3/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/harrystaley/Documents/Git/College_Homework/CSCI3362_Operating_Systems/CSCI_3362_Assignment3/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/harrystaley/Documents/Git/College_Homework/CSCI3362_Operating_Systems/CSCI_3362_Assignment3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/harrystaley/Documents/Git/College_Homework/CSCI3362_Operating_Systems/CSCI_3362_Assignment3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/harrystaley/Documents/Git/College_Homework/CSCI3362_Operating_Systems/CSCI_3362_Assignment3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/harrystaley/Documents/Git/College_Homework/CSCI3362_Operating_Systems/CSCI_3362_Assignment3/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/harrystaley/Documents/Git/College_Homework/CSCI3362_Operating_Systems/CSCI_3362_Assignment3/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/harrystaley/Documents/Git/College_Homework/CSCI3362_Operating_Systems/CSCI_3362_Assignment3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/harrystaley/Documents/Git/College_Homework/CSCI3362_Operating_Systems/CSCI_3362_Assignment3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/harrystaley/Documents/Git/College_Homework/CSCI3362_Operating_Systems/CSCI_3362_Assignment3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/harrystaley/Documents/Git/College_Homework/CSCI3362_Operating_Systems/CSCI_3362_Assignment3/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/harrystaley/Documents/Git/College_Homework/CSCI3362_Operating_Systems/CSCI_3362_Assignment3/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/harrystaley/Documents/Git/College_Homework/CSCI3362_Operating_Systems/CSCI_3362_Assignment3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/harrystaley/Documents/Git/College_Homework/CSCI3362_Operating_Systems/CSCI_3362_Assignment3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/harrystaley/Documents/Git/College_Homework/CSCI3362_Operating_Systems/CSCI_3362_Assignment3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="CSCI_3362_Assignment3">
+				<Option output="/Users/harrystaley/Documents/Git/College_Homework/CSCI3362_Operating_Systems/CSCI_3362_Assignment3/cmake-build-debug/CSCI_3362_Assignment3" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/harrystaley/Documents/Git/College_Homework/CSCI3362_Operating_Systems/CSCI_3362_Assignment3/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/harrystaley/Documents/Git/College_Homework/CSCI3362_Operating_Systems/CSCI_3362_Assignment3/."/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/harrystaley/Documents/Git/College_Homework/CSCI3362_Operating_Systems/CSCI_3362_Assignment3/cmake-build-debug/Makefile&quot;  VERBOSE=1 CSCI_3362_Assignment3"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/harrystaley/Documents/Git/College_Homework/CSCI3362_Operating_Systems/CSCI_3362_Assignment3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/harrystaley/Documents/Git/College_Homework/CSCI3362_Operating_Systems/CSCI_3362_Assignment3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/harrystaley/Documents/Git/College_Homework/CSCI3362_Operating_Systems/CSCI_3362_Assignment3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="CSCI_3362_Assignment3/fast">
+				<Option output="/Users/harrystaley/Documents/Git/College_Homework/CSCI3362_Operating_Systems/CSCI_3362_Assignment3/cmake-build-debug/CSCI_3362_Assignment3" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/harrystaley/Documents/Git/College_Homework/CSCI3362_Operating_Systems/CSCI_3362_Assignment3/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/harrystaley/Documents/Git/College_Homework/CSCI3362_Operating_Systems/CSCI_3362_Assignment3/."/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/harrystaley/Documents/Git/College_Homework/CSCI3362_Operating_Systems/CSCI_3362_Assignment3/cmake-build-debug/Makefile&quot;  VERBOSE=1 CSCI_3362_Assignment3/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/harrystaley/Documents/Git/College_Homework/CSCI3362_Operating_Systems/CSCI_3362_Assignment3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/harrystaley/Documents/Git/College_Homework/CSCI3362_Operating_Systems/CSCI_3362_Assignment3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/harrystaley/Documents/Git/College_Homework/CSCI3362_Operating_Systems/CSCI_3362_Assignment3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/harrystaley/Documents/Git/College_Homework/CSCI3362_Operating_Systems/CSCI_3362_Assignment3/CPU.c">
+			<Option target="CSCI_3362_Assignment3"/>
+		</Unit>
+		<Unit filename="/Users/harrystaley/Documents/Git/College_Homework/CSCI3362_Operating_Systems/CSCI_3362_Assignment3/CPU.h">
+			<Option target="CSCI_3362_Assignment3"/>
+		</Unit>
+		<Unit filename="/Users/harrystaley/Documents/Git/College_Homework/CSCI3362_Operating_Systems/CSCI_3362_Assignment3/cpu.h">
+			<Option target="CSCI_3362_Assignment3"/>
+		</Unit>
+		<Unit filename="/Users/harrystaley/Documents/Git/College_Homework/CSCI3362_Operating_Systems/CSCI_3362_Assignment3/driver.c">
+			<Option target="CSCI_3362_Assignment3"/>
+		</Unit>
+		<Unit filename="/Users/harrystaley/Documents/Git/College_Homework/CSCI3362_Operating_Systems/CSCI_3362_Assignment3/list.c">
+			<Option target="CSCI_3362_Assignment3"/>
+		</Unit>
+		<Unit filename="/Users/harrystaley/Documents/Git/College_Homework/CSCI3362_Operating_Systems/CSCI_3362_Assignment3/list.h">
+			<Option target="CSCI_3362_Assignment3"/>
+		</Unit>
+		<Unit filename="/Users/harrystaley/Documents/Git/College_Homework/CSCI3362_Operating_Systems/CSCI_3362_Assignment3/schedule_fcfs.c">
+			<Option target="CSCI_3362_Assignment3"/>
+		</Unit>
+		<Unit filename="/Users/harrystaley/Documents/Git/College_Homework/CSCI3362_Operating_Systems/CSCI_3362_Assignment3/schedule_priority.c">
+			<Option target="CSCI_3362_Assignment3"/>
+		</Unit>
+		<Unit filename="/Users/harrystaley/Documents/Git/College_Homework/CSCI3362_Operating_Systems/CSCI_3362_Assignment3/schedule_priority_rr.c">
+			<Option target="CSCI_3362_Assignment3"/>
+		</Unit>
+		<Unit filename="/Users/harrystaley/Documents/Git/College_Homework/CSCI3362_Operating_Systems/CSCI_3362_Assignment3/schedule_rr.c">
+			<Option target="CSCI_3362_Assignment3"/>
+		</Unit>
+		<Unit filename="/Users/harrystaley/Documents/Git/College_Homework/CSCI3362_Operating_Systems/CSCI_3362_Assignment3/schedule_sjf.c">
+			<Option target="CSCI_3362_Assignment3"/>
+		</Unit>
+		<Unit filename="/Users/harrystaley/Documents/Git/College_Homework/CSCI3362_Operating_Systems/CSCI_3362_Assignment3/schedulers.h">
+			<Option target="CSCI_3362_Assignment3"/>
+		</Unit>
+		<Unit filename="/Users/harrystaley/Documents/Git/College_Homework/CSCI3362_Operating_Systems/CSCI_3362_Assignment3/task.h">
+			<Option target="CSCI_3362_Assignment3"/>
+		</Unit>
+		<Unit filename="/Users/harrystaley/Documents/Git/College_Homework/CSCI3362_Operating_Systems/CSCI_3362_Assignment3/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
