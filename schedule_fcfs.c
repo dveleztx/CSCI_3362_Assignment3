@@ -16,6 +16,7 @@
 
 #define MIN_PRIORITY 1
 #define MAX_PRIORITY 10
+#define TID 1
 
 Task *sendTask = NULL;
 struct node *myNode = NULL;
@@ -25,12 +26,14 @@ void add(char *name, int priority, int burst) {
 
 	schedule();
 
-	Task myTask = { name, 1, priority, burst };
+	Task myTask = { name, TID, priority, burst };
 	sendTask = &myTask;
 
 	struct node next;
 	struct node a = { sendTask, &next };
 	myNode = &a;
+
+	printf("Name: %s\tPriority: %d\tBurst: %d\n", myTask.name, myTask.priority, myTask.burst);
 
 	insert(&myNode, sendTask);
 
