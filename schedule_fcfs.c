@@ -46,9 +46,12 @@ void add(char *name, int priority, int burst) {
 	// Inserting Node pointer and Task pointer objects
 	insert(&current, myTask);
 
+	// Traverse List
+	traverse(current);
+
 }
 
 // invoke the scheduler
-void schedule(){
+void schedule() {
 
 }
