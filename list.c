@@ -49,9 +49,9 @@ void traverse(struct node *head) {
     temp = head;
 
     int waitTime = 0;
-    printf("Name\tPriority\tBurst\tWait\n");
+    printf("Name Priority Burst Wait\n");
     while (temp != NULL) {
-        printf("[%s]\t[%d]\t[%d]\t%d\n",temp->task->name, temp->task->priority, temp->task->burst, waitTime);
+        printf("%-5s%-9d%-6d%-4d\n",temp->task->name, temp->task->priority, temp->task->burst, waitTime);
         waitTime = waitTime + temp->task->burst;
         temp = temp->next;
     }
