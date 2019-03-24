@@ -36,7 +36,7 @@ void add(char *name, int priority, int burst) {
 	// Test contents of the Node Object
 	while (head != NULL) {
 
-		printf("Name: %s\tPriority: %d\tBurst: %d\n", head->task->name, head->task->priority, head->task->burst);
+		//printf("Name: %s\tPriority: %d\tBurst: %d\n", head->task->name, head->task->priority, head->task->burst);
 		head = head->next;
 	}
 
