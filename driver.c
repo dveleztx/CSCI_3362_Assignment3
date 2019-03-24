@@ -34,8 +34,8 @@ int main(int argc, char *argv[])
         priority = atoi(strsep(&temp,","));
         burst = atoi(strsep(&temp,","));
 
-        // add the task to the scheduler's list of tasks
-        add(name,priority,burst);
+        // create the task to the scheduler's list of tasks
+        create(name, priority, burst);
 
         free(temp);
     }

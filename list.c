@@ -10,9 +10,9 @@
 #include "task.h"
 
 
-// add a new task to the list of tasks
+// create a new task to the list of tasks
 void insert(struct node **head, Task *newTask) {
-    // add the new task to the list 
+    // create the new task to the list
     struct node *newNode = malloc(sizeof(struct node));
 
     newNode->task = newTask;
@@ -51,10 +51,10 @@ void traverse(struct node *head) {
     int waitTime = 0;
     printf("Name Priority Burst      Wait\n");
     while (temp != NULL) {
-        //char *task_name = temp->task->name;
+        char *task_name = temp->task->name;
         int priority = temp->task->priority;
         int burst = temp->task->burst;
-        printf("%-5s%-9d%-11d%-4d\n","bob", priority, burst, waitTime);
+        printf("%-5s%-9d%-6d%-4d\n",task_name, priority, burst, waitTime);
         waitTime = waitTime + temp->task->burst;
         temp = temp->next;
     }
