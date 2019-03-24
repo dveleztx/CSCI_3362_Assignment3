@@ -13,7 +13,7 @@
 #define MAX_PRIORITY 10
 #define TID 1
 
-struct node *current;
+struct node *head;
 
 void create(char *name, int priority, int burst) {
 
@@ -21,7 +21,7 @@ void create(char *name, int priority, int burst) {
 	Task newTask = { name, TID, priority, burst };
 
 	// Create Node
-	struct node *head = NULL;
+	head = NULL;
 	head = malloc(sizeof(struct node));
 
 	if (head == NULL) {
@@ -37,6 +37,5 @@ void create(char *name, int priority, int burst) {
 // invoke the scheduler
 void schedule() {
 	// Traverse List
-    traverse(current);
-
+    traverse(head);
 }
