@@ -16,8 +16,10 @@
 void add(char *name, int priority, int burst) {
 
 	// Create task
-	Task myTask = { name, TID, priority, burst };
-	//printf("Name: %s\tPriority: %d\tBurst: %d\n", myTask.name, myTask.priority, myTask.burst);
+	Task newTask = { name, TID, priority, burst };
+
+	// Create task pointer
+	Task *myTask = &newTask;
 
 	// Create Node
 	struct node *head = NULL;
@@ -27,22 +29,22 @@ void add(char *name, int priority, int burst) {
 		perror("error");
 	}
 
-	head->task = &myTask;
+	// Assign Node to Task
+	head->task = myTask;
 	head->next = NULL;
 
+	// Test contents of the Node Object
 	while (head != NULL) {
 
 		printf("Name: %s\tPriority: %d\tBurst: %d\n", head->task->name, head->task->priority, head->task->burst);
 		head = head->next;
 	}
 
-	//insert(head, myTask);
+	// Creating Node point to Node Object
+	struct node *current = head;
 
-	/*sendTask = &myTask;
-
-	struct node next;
-	struct node a = { sendTask, &next };
-	myNode = &a;*/
+	// Inserting Node pointer and Task pointer objects
+	insert(&current, myTask);
 
 }
 
