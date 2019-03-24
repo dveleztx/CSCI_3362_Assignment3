@@ -49,9 +49,12 @@ void traverse(struct node *head) {
     temp = head;
 
     int waitTime = 0;
-    printf("Name Priority Burst Wait\n");
+    printf("Name Priority Burst      Wait\n");
     while (temp != NULL) {
-        printf("%-5s%-9d%-6d%-4d\n",temp->task->name, temp->task->priority, temp->task->burst, waitTime);
+        //char *task_name = temp->task->name;
+        int priority = temp->task->priority;
+        int burst = temp->task->burst;
+        printf("%-5s%-9d%-11d%-4d\n","bob", priority, burst, waitTime);
         waitTime = waitTime + temp->task->burst;
         temp = temp->next;
     }
