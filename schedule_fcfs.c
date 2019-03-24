@@ -13,6 +13,8 @@
 #define MAX_PRIORITY 10
 #define TID 1
 
+struct node *current = NULL;
+
 void add(char *name, int priority, int burst) {
 
 	// Create task
@@ -33,25 +35,17 @@ void add(char *name, int priority, int burst) {
 	head->task = myTask;
 	head->next = NULL;
 
-	// Test contents of the Node Object
-	while (head != NULL) {
-
-		//printf("Name: %s\tPriority: %d\tBurst: %d\n", head->task->name, head->task->priority, head->task->burst);
-		head = head->next;
-	}
-
 	// Creating Node point to Node Object
-	struct node *current = head;
+	current = head;
 
 	// Inserting Node pointer and Task pointer objects
 	insert(&current, myTask);
-
-	// Traverse List
 	traverse(current);
-
 }
 
 // invoke the scheduler
 void schedule() {
+
+	// Traverse List
 
 }

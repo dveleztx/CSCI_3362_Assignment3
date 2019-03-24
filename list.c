@@ -45,11 +45,14 @@ void delete(struct node **head, Task *task) {
 
 // traverse the list
 void traverse(struct node *head) {
-    struct node *temp;
+	struct node *temp;
     temp = head;
 
+    int waitTime = 0;
+    printf("Name\tPriority\tBurst\tWait\n");
     while (temp != NULL) {
-        printf("[%s] [%d] [%d]\n",temp->task->name, temp->task->priority, temp->task->burst);
+        printf("[%s]\t[%d]\t[%d]\t%d\n",temp->task->name, temp->task->priority, temp->task->burst, waitTime);
+        waitTime = waitTime + temp->task->burst;
         temp = temp->next;
     }
 }
