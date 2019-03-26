@@ -29,8 +29,7 @@ void delete(struct node **head, Task *task) {
     // special case - beginning of list
     if (strcmp(task->name,temp->task->name) == 0) {
         *head = (*head)->next;
-    }
-    else {
+    } else {
         // interior or last element in the list
         prev = *head;
         temp = temp->next;
@@ -51,10 +50,11 @@ void traverse(struct node *head) {
     int waitTime = 0;
     printf("Name Priority  Burst       Wait\n");
     while (temp != NULL) {
-        //char *task_name = temp->task->name;
+        //char *name = temp->task->name;
         int priority = temp->task->priority;
-        int burst = temp->task->burst;
-        printf("%-5s%-10d%-12d%-4d\n","BOB", priority, burst, waitTime);
+        //int burst = temp->task->burst;
+        printf("[%d]/n", priority);
+        //printf("[%s] [%d] [%d] [%d]\n",name, priority, burst, waitTime);
         waitTime = waitTime + temp->task->burst;
         temp = temp->next;
     }

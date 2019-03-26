@@ -13,25 +13,22 @@
 #define MAX_PRIORITY 10
 #define TID 1
 
-struct node *head;
+struct node *head = NULL;
 
 void create(char *name, int priority, int burst) {
 
 	// Create task
-	Task newTask = { name, TID, priority, burst };
+	Task newTask = { .name = name, .tid = TID, .priority = priority, .burstburst };
 
-	// Create Node
-	head = NULL;
-	head = malloc(sizeof(struct node));
-
-	if (head == NULL) {
-		perror("error");
-	}
-
-	head->next = NULL;
-
-	// Inserting Node pointer and Task pointer objects
-	insert(&head, &newTask);
+	if (head != NULL) {
+        // Inserting Node pointer and Task pointer objects
+        insert(&head, &newTask);
+    } else {
+        // Create the head Node
+        head = malloc(sizeof(struct node));
+        head->task = newTask;
+        head->next = NULL;
+    }
 }
 
 // invoke the scheduler
