@@ -16,18 +16,31 @@
 struct node *head = NULL;
 
 void create(char *name, int priority, int burst) {
+    printf("VALUES PRIOR TO TASK LOAD\n");
+    printf("N: %s\n", name);
+    printf("P: %d\n", priority);
+    printf("B: %d\n", burst);
 
 	// Create task
-	Task newTask = { .name = name, .tid = TID, .priority = priority, .burstburst };
+	Task newTask = { .name = name, .tid = TID, .priority = priority, .burst = burst };
+	printf("VALUES AFTER TASK LOAD\n");
+    printf("N: %s\n", newTask.name);
+    printf("P: %d\n", newTask.priority);
+    printf("B: %d\n", newTask.burst);
 
-	if (head != NULL) {
+    if (head != NULL) {
         // Inserting Node pointer and Task pointer objects
         insert(&head, &newTask);
     } else {
         // Create the head Node
-        head = malloc(sizeof(struct node));
-        head->task = newTask;
+        head = (struct node *)malloc(sizeof(struct node));
+        head->task = &newTask;
         head->next = NULL;
+        printf("VALUES AFTER HEAD LOAD\n");
+        printf("N: %s\n", head->task->name);
+        printf("P: %d\n", head->task->priority);
+        printf("B: %d\n", head->task->burst);
+
     }
 }
 
