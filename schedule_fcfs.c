@@ -13,6 +13,7 @@
 #define MAX_PRIORITY 10
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 struct node *head = NULL;
 
 void create(char *name, int priority, int burst) {
@@ -47,6 +48,13 @@ struct Node *head = NULL;
 void create(Task *newTask) {
 
 
+=======
+struct Node *head = NULL;
+
+void create(Task *newTask) {
+
+
+>>>>>>> Stashed changes
     if (head == NULL) {
         head = malloc(sizeof(struct Node));
         head->task = newTask;
@@ -54,6 +62,9 @@ void create(Task *newTask) {
     } else {
         // Inserting Node pointer and Task pointer objects
         insert(&head, newTask);
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     }
 }
