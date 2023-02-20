@@ -14,6 +14,7 @@
 
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 struct node *head = NULL;
 
 void create(char *name, int priority, int burst) {
@@ -55,6 +56,13 @@ void create(Task *newTask) {
 
 
 >>>>>>> Stashed changes
+=======
+struct Node *head = NULL;
+
+void create(Task *newTask) {
+
+
+>>>>>>> Stashed changes
     if (head == NULL) {
         head = malloc(sizeof(struct Node));
         head->task = newTask;
@@ -63,6 +71,9 @@ void create(Task *newTask) {
         // Inserting Node pointer and Task pointer objects
         insert(&head, newTask);
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes

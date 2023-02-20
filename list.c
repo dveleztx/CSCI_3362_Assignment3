@@ -12,6 +12,7 @@
 // create a new task to the list of tasks
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 void insert(struct node **head, Task *newTask) {
     // create the new task to the list
     struct node *newNode = (struct node *)malloc(sizeof(struct node));
@@ -23,11 +24,16 @@ void insert(struct node **head, Task *newTask) {
 =======
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 void insert(struct Node **head, Task *newTask) {
     // Allocate a new node
     struct Node* newNode = malloc(sizeof(struct Node));
     // insert the data in the node
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -71,8 +77,13 @@ void delete(struct Node **head, Task *task) {
 // traverse the list
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 void traverse(struct node *head) {
     struct node *temp;
+=======
+void traverse(struct Node *head) {
+	struct Node *temp;
+>>>>>>> Stashed changes
 =======
 void traverse(struct Node *head) {
 	struct Node *temp;
@@ -88,12 +99,20 @@ void traverse(struct Node *head) {
     while (temp != NULL) {
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         char *task_name = temp->task->name;
         int priority = temp->task->priority;
         int burst = temp->task->burst;
         //printf("[%s]\n", task_name);
         printf("[%s] [%d] [%d] [%d]\n",task_name, priority, burst, waitTime);
         waitTime = waitTime + temp->task->burst;
+=======
+        char *name = temp->task->name;
+        int priority = temp->task->priority;
+        int burst = temp->task->burst;
+        printf("%-10s%-10d%-12d%-10d\n",name, priority, burst, waitTime);
+        waitTime = waitTime + burst;
+>>>>>>> Stashed changes
 =======
         char *name = temp->task->name;
         int priority = temp->task->priority;
