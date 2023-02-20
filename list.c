@@ -10,6 +10,7 @@
 #include "task.h"
 
 // create a new task to the list of tasks
+<<<<<<< Updated upstream
 void insert(struct node **head, Task *newTask) {
     // create the new task to the list
     struct node *newNode = (struct node *)malloc(sizeof(struct node));
@@ -18,8 +19,16 @@ void insert(struct node **head, Task *newTask) {
         printf("Unable to allocate memory.");
         return;
     }
+=======
+void insert(struct Node **head, Task *newTask) {
+    // Allocate a new node
+    struct Node* newNode = malloc(sizeof(struct Node));
+    // insert the data in the node
+>>>>>>> Stashed changes
     newNode->task = newTask;
+    // make next of newNode as the head node.
     newNode->next = *head;
+    // move the head to point to the new node.
     *head = newNode;
     printf("VALUES AFTER NEW NODE LOAD\n");
     printf("N: %s\n", newNode->task->name);
@@ -32,9 +41,9 @@ void insert(struct node **head, Task *newTask) {
 }
 
 // delete the selected task from the list
-void delete(struct node **head, Task *task) {
-    struct node *temp;
-    struct node *prev;
+void delete(struct Node **head, Task *task) {
+    struct Node *temp;
+    struct Node *prev;
 
     temp = *head;
     // special case - beginning of list
@@ -54,19 +63,32 @@ void delete(struct node **head, Task *task) {
 }
 
 // traverse the list
+<<<<<<< Updated upstream
 void traverse(struct node *head) {
     struct node *temp;
+=======
+void traverse(struct Node *head) {
+	struct Node *temp;
+>>>>>>> Stashed changes
     temp = head;
 
     int waitTime = 0;
     printf("Name Priority  Burst       Wait\n");
     while (temp != NULL) {
+<<<<<<< Updated upstream
         char *task_name = temp->task->name;
         int priority = temp->task->priority;
         int burst = temp->task->burst;
         //printf("[%s]\n", task_name);
         printf("[%s] [%d] [%d] [%d]\n",task_name, priority, burst, waitTime);
         waitTime = waitTime + temp->task->burst;
+=======
+        char *name = temp->task->name;
+        int priority = temp->task->priority;
+        int burst = temp->task->burst;
+        printf("%-10s%-10d%-12d%-10d\n",name, priority, burst, waitTime);
+        waitTime = waitTime + burst;
+>>>>>>> Stashed changes
         temp = temp->next;
     }
 }

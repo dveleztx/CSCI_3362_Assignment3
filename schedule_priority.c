@@ -7,7 +7,7 @@
 #define MAX_PRIORITY 10
 
 // create a task to the list
-void create(char *name, int priority, int burst){
+void create(char *name) {
 
 }
 

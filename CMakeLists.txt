@@ -6,10 +6,6 @@ set(CMAKE_C_STANDARD 11)
 include_directories(.)
 
 add_executable(CSCI_3362_Assignment3
-        CPU.c
-        cpu.h
-        driver.c
-        list.c
-        list.h
-        schedulers.h
-        task.h schedule_fcfs.c schedule_sjf.c schedule_rr.c schedule_priority.c schedule_priority_rr.c)
+        make clean
+        make fcfs
+        ./fcfs book.txt)

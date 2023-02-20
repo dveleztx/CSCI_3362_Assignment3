@@ -15,6 +15,7 @@
 #include "schedulers.h"
 
 #define SIZE    100
+#define TID 1
 
 int main(int argc, char *argv[])
 {
@@ -33,9 +34,11 @@ int main(int argc, char *argv[])
         name = strsep(&temp,",");
         priority = atoi(strsep(&temp,","));
         burst = atoi(strsep(&temp,","));
+        // Create task
+        Task newTask = { name, TID, priority, burst };
 
         // create the task to the scheduler's list of tasks
-        create(name, priority, burst);
+        create(&newTask);
 
         free(temp);
     }

@@ -4,12 +4,12 @@
 
 #include "task.h"
 
-struct node {
+struct Node {
     Task *task;
-    struct node *next;
+    struct Node *next;
 };
 
 // insert and delete operations.
-void insert(struct node **head, Task *newTask);
-void delete(struct node **head, Task *task);
-void traverse(struct node *head);
+void insert(struct Node **head, Task *newTask);
+void delete(struct Node **head, Task *task);
+void traverse(struct Node *head);
