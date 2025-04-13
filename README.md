@@ -1,62 +1,56 @@
 # CSCI_3362_Assignment3
 
 ## Project Overview
-This repository, `CSCI_3362_Assignment3`, contains the code and related resources for the Operating Systems assignment on Scheduling Algorithms. The objective of this assignment is to understand and implement various types of scheduling algorithms such as First-Come, First-Serve (FCFS), Shortest Job Next (SJN), and Round Robin (RR). This project is a part of the Computer Science course, CSCI 3362.
+This repository contains the solutions and documentation for the third assignment of the CSCI 3362 course, focusing on Operating Systems and specifically on Scheduling Algorithms. The project explores various scheduling algorithms used in operating systems to manage processes' execution order efficiently.
+
+### Project Structure
+The project is structured as follows:
+- `src/`: Contains all the source code files implementing different scheduling algorithms.
+- `doc/`: Documentation related to the project and assignment requirements.
+- `tests/`: Test scripts and files to validate the implementation of the scheduling algorithms.
+- `examples/`: Example input files and their corresponding outputs for demonstration purposes.
 
 ## Setup and Installation
 
-Before you begin, ensure your system has the following software installed:
+### Dependencies
+- Python 3.8 or higher
+- NumPy library
 
-- A modern web browser.
-- A text editor, such as Visual Studio Code or Atom.
-- Git, for version control.
-- Python 3.8 or later.
-
-To install this project on your local machine, follow these steps:
-
-1. Clone the repository using Git:
-
+### Installation Instructions
+1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/username/CSCI_3362_Assignment3.git
-   ```
-
-2. Navigate to the project directory:
-
-   ```bash
+   git clone https://github.com/yourusername/CSCI_3362_Assignment3.git
    cd CSCI_3362_Assignment3
    ```
 
-3. Install the required Python dependencies:
-
+2. **Install Required Python Packages:**
    ```bash
-   pip install -r requirements.txt
+   pip install numpy
    ```
 
 ## Usage Examples
 
-Once you've installed the project, you can run the scheduling algorithms as follows:
+To run a scheduling algorithm simulation, navigate to the `src/` directory and execute one of the scripts. For example, to run the First-Come, First-Served (FCFS) scheduling algorithm, you can use the following command:
 
 ```bash
-python main.py --algorithm FCFS
+python fcfs.py ../examples/input1.txt
 ```
 
-This will run the First-Come, First-Serve algorithm. You can replace `FCFS` with `SJN` or `RR` to run the Shortest Job Next or Round Robin algorithms, respectively.
+This will read the process data from `input1.txt`, execute the FCFS scheduling algorithm, and print the results.
 
 ## Contribution Guidelines
 
-We welcome contributions from all students and faculty. If you'd like to contribute, please follow these steps:
-
-1. Fork the repository.
-2. Create a new branch for your changes.
-3. Commit your changes to your branch.
-4. Open a pull request.
-
-Before submitting your pull request, please ensure your code adheres to the following guidelines:
-
-- It is fully tested and all tests pass.
-- It follows the Python style guide (PEP8).
-- It is documented with comments, explaining what your code does.
+Contributions to this repository are welcome. If you wish to contribute, please follow these guidelines:
+1. **Fork the Repository:** Start by forking the repository to your GitHub account.
+2. **Create a Branch:** Create a branch in your forked repository. This branch should be named according to the feature or fix you are working on.
+3. **Commit Changes:** Make your changes in your branch and commit them with clear, concise commit messages.
+4. **Push Changes:** Push your changes to your fork on GitHub.
+5. **Submit a Pull Request:** Open a pull request from your fork to the main repository. Include a clear description of the changes and any other relevant information.
 
 ## License
 
-This project is licensed under the MIT License. For more details, please see the [LICENSE](LICENSE) file.
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details. This license allows for free use, modification, and distribution of the software.
+
+---
+
+Feel free to explore the repository, and we appreciate your interest in improving the scheduling algorithms for educational purposes!
