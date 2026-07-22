@@ -1,56 +1,67 @@
+```markdown
 # CSCI_3362_Assignment3
 
-## Project Overview
-This repository contains the solutions and documentation for the third assignment of the CSCI 3362 course, focusing on Operating Systems and specifically on Scheduling Algorithms. The project explores various scheduling algorithms used in operating systems to manage processes' execution order efficiently.
+## Overview
+This repository contains the third assignment for the CSCI 3362 course, focusing on the implementation and analysis of various scheduling algorithms used in operating systems. The project aims to provide a deeper understanding of how different scheduling techniques work and their impact on system performance.
 
-### Project Structure
-The project is structured as follows:
-- `src/`: Contains all the source code files implementing different scheduling algorithms.
-- `doc/`: Documentation related to the project and assignment requirements.
-- `tests/`: Test scripts and files to validate the implementation of the scheduling algorithms.
-- `examples/`: Example input files and their corresponding outputs for demonstration purposes.
+## Features
+- **Implementation of Scheduling Algorithms**: Includes First-Come-First-Served (FCFS), Shortest Job Next (SJN), Priority Scheduling, and Round Robin (RR).
+- **Performance Metrics**: Evaluate algorithms based on turnaround time, waiting time, and CPU utilization.
+- **Simulation Environment**: A simple command-line interface to simulate and compare different scheduling strategies.
 
-## Setup and Installation
+## Setup
+To set up the project locally, follow these steps:
 
-### Dependencies
-- Python 3.8 or higher
-- NumPy library
-
-### Installation Instructions
-1. **Clone the Repository:**
+1. **Clone the repository**:
    ```bash
    git clone https://github.com/yourusername/CSCI_3362_Assignment3.git
    cd CSCI_3362_Assignment3
    ```
 
-2. **Install Required Python Packages:**
+2. **Compile the code**:
+   Ensure you have a C++ compiler installed. Then compile the source files:
    ```bash
-   pip install numpy
+   g++ -o scheduler main.cpp scheduler.cpp
    ```
 
-## Usage Examples
+3. **Run the executable**:
+   ```bash
+   ./scheduler
+   ```
 
-To run a scheduling algorithm simulation, navigate to the `src/` directory and execute one of the scripts. For example, to run the First-Come, First-Served (FCFS) scheduling algorithm, you can use the following command:
+## Usage
+After setting up the project, use the following commands to simulate scheduling algorithms:
 
-```bash
-python fcfs.py ../examples/input1.txt
-```
+- **FCFS**: 
+  ```bash
+  ./scheduler fcfs input_file.txt
+  ```
 
-This will read the process data from `input1.txt`, execute the FCFS scheduling algorithm, and print the results.
+- **SJN**: 
+  ```bash
+  ./scheduler sjn input_file.txt
+  ```
+
+- **Priority Scheduling**: 
+  ```bash
+  ./scheduler priority input_file.txt
+  ```
+
+- **Round Robin**: 
+  ```bash
+  ./scheduler rr input_file.txt time_quantum
+  ```
+
+Replace `input_file.txt` with your input file containing process details and `time_quantum` with the desired time quantum for Round Robin scheduling.
 
 ## Contribution Guidelines
+We welcome contributions to improve the project. Please adhere to the following guidelines:
 
-Contributions to this repository are welcome. If you wish to contribute, please follow these guidelines:
-1. **Fork the Repository:** Start by forking the repository to your GitHub account.
-2. **Create a Branch:** Create a branch in your forked repository. This branch should be named according to the feature or fix you are working on.
-3. **Commit Changes:** Make your changes in your branch and commit them with clear, concise commit messages.
-4. **Push Changes:** Push your changes to your fork on GitHub.
-5. **Submit a Pull Request:** Open a pull request from your fork to the main repository. Include a clear description of the changes and any other relevant information.
+- Fork the repository and create a new branch for your feature or bug fix.
+- Make sure your code follows the existing style and conventions.
+- Write clear, concise commit messages.
+- Open a pull request with a detailed description of your changes.
 
 ## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details. This license allows for free use, modification, and distribution of the software.
-
----
-
-Feel free to explore the repository, and we appreciate your interest in improving the scheduling algorithms for educational purposes!
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+```
